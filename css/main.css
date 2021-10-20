@@ -1,0 +1,395 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #f1f1f1;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  nav .i55555 {
+    display: none;
+  }
+  nav .i5 {
+    width: 30px;
+    margin-right: 2px;
+  }
+  .right ul {
+    display: none;
+  }
+  
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    nav .i55555 {
+        display: none;
+      }
+      nav .i5 {
+        width: 30px;
+        margin-right: 2px;
+      }
+      .right ul {
+        display: none;
+      }
+      .services .serve a{
+        height: 210px !important;
+      }
+      .services .serve a img{
+        height: 210px !important;
+      }
+      .services .serve a::before{
+        height: 210px !important;
+      }
+}
+@media screen and (min-width: 768px){
+      nav .i55555 {
+        display: block;
+      }
+      nav .i5 {
+        display: none;
+      }
+      .right ul li {
+        display: none;
+      }
+      .right ul li:nth-child(2) {
+        display: block;
+      }
+      .services .serve a{
+        height: 210px !important;
+      }
+      .services .serve a img{
+        height: 210px !important;
+      }
+      .services .serve a::before{
+        height: 210px !important;
+      }
+}
+@media screen and (min-width: 992px) {
+  .right ul li {
+    display: block;
+  }
+  .services .serve{
+    width: 25% !important;
+  }
+  .services .serve a{
+    height: 150px !important;
+  }
+  .services .serve a img{
+    height: 150px !important;
+  }
+  .services .serve a::before{
+    height: 150px !important;
+  }
+}
+
+/* aside */
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  border-right: 1px solid;
+  background-color: white;
+}
+aside input {
+  font-size: 18px;
+  height: 41px;
+  width: 100%;
+  padding-right: 5px;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+aside ul li a {
+  padding: 20px;
+  display: block;
+}
+aside ul li a:hover {
+  background-color: gainsboro;
+}
+aside ul li i {
+  font: normal normal normal 14px/1 FontAwesome;
+  color: rgb(12, 34, 1);
+}
+aside ul li a span {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 5px 0 0;
+  color: #000;
+}
+aside ul li:last-of-type {
+  position: relative;
+}
+aside ul li:last-of-type > i {
+  position: absolute;
+  right: 275px;
+  top: 23px;
+  font-size: 15px;
+}
+aside ul li:last-of-type > i:hover {
+  transform: rotateZ(90deg);
+}
+aside ul li:last-of-type ul {
+  display: none;
+}
+aside ul li:last-of-type ul:target {
+  display: block;
+}
+aside ul li:last-of-type li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* aside */
+
+/* main */
+main {
+  position: relative;
+  right: 300px;
+  box-shadow: 5px 0 3px gray;
+  width: 100%;
+  height: 10000px;
+  background-color: #f1f1f1;
+}
+/* main */
+
+/* start header */
+
+.expand {
+  background-color: rgba(53, 49, 49, 0.938);
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 55px;
+}
+header .right {
+  display: flex;
+  align-items: center;
+}
+.right a:hover {
+  background-color: gray;
+}
+.right .fi {
+  font: normal normal normal 25px/1 FontAwesome;
+  padding: 20px;
+  color: white;
+}
+.right .rul {
+  margin: 0 5px;
+}
+nav .i55555 {
+  width: 150px;
+  margin-right: 2px;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav ul li a {
+  padding: 20px 15px;
+  list-style: none;
+  color: white;
+}
+nav ul li a:hover {
+  background-color: gray;
+}
+nav ul li i {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+nav ul li span {
+  font-size: 14px;
+  margin: auto 0;
+  font-weight: bold;
+  padding: 0 2px 0 0;
+}
+.left i {
+  font: normal normal normal 20px/1 FontAwesome;
+}
+.left li:last-of-type i {
+  color: rgb(0, 255, 64);
+}
+
+/* end header */
+
+                                /* start main section */
+
+/* first service section */
+h1{
+  padding: 0 25px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 600;
+}
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.services .serve{
+  width: 50%;
+  padding: 15px;
+}
+.services .serve a{
+  position: relative;
+  display: flex;
+  height: 9em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.services .serve a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0.4;
+  height: 150px;
+  width: 100%;
+  z-index: 1;
+}
+
+.services .serve a h2{
+  z-index: 2;
+  font-size: 20px;
+}
+.services .serve a img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 150px;
+  width: 100%;
+}
+/* first service section */
+
+/* second service section */
+.services-two {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.services-two .serve-two{
+  background-color: white;
+  margin: 10px 0;
+}
+.services-two .work-service{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px;
+}
+.services-two .work-service a{
+  color: #000;
+  font-size: 25px;
+}
+.services-two .work-service a:first-of-type:hover{
+  color: green;
+}
+.services-two .work-service a:last-of-type{
+  color: green;
+  font-size: 18px;
+  border: 1px solid green ;
+  padding: 7.5px 10px;
+}
+.services-two .work-service a:last-of-type:hover{
+  background-color: green;
+  color: white;
+}
+.services-two .serve-two a{
+  margin: 10px;
+  color: #777;
+  
+}
+.services-two .serve-two a:first-of-type{
+  display: block;
+  color: #000;
+  margin-bottom: 35px;
+  font-size: 20px;
+  max-width: 350px;
+}
+.services-two .serve-two a:hover{
+  color: #ff1e00;
+}
+
+.services-two .serve-two .auther{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+
+}
+.services-two .serve-two .auther img{
+  width: 30px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.services-two .serve-two .auther i:first-of-type{
+ color: gold;
+ margin: 5px;
+ position: relative;
+}
+.services-two .serve-two .auther i:first-of-type .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  right: 0;
+  top: 130%;
+ }
+.services-two .serve-two .auther i:first-of-type:hover .tooltiptext {
+ visibility: visible;
+}
+.services-two .serve-two .auther i:last-of-type{
+  color: #ff1e00;
+  margin: 5px 15px 5px 5px;
+  position: relative;
+}
+.services-two .serve-two .auther i:last-of-type .tooltiptext{
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  right: 0;
+  top: 130%;
+}
+.services-two .serve-two .auther i:last-of-type:hover .tooltiptext {
+  visibility: visible;
+ }
+.services-two .serve-two .auther span:first-of-type{
+  color: gold;
+  font-weight: bold;
+ }
+
+
+
+/* second service section */
+/* end main section */
