@@ -19,7 +19,7 @@ body {
     display: none;
   }
   nav .i5 {
-    width: 30px;
+    width: 25px;
     margin-right: 2px;
   }
   .right ul {
@@ -32,7 +32,7 @@ body {
         display: none;
       }
       nav .i5 {
-        width: 30px;
+        width: 25px;
         margin-right: 2px;
       }
       .right ul {
@@ -226,7 +226,6 @@ nav ul li span {
 .left li:last-of-type i {
   color: rgb(0, 255, 64);
 }
-
 /* end header */
 
                                 /* start main section */
@@ -267,7 +266,6 @@ h1{
   width: 100%;
   z-index: 1;
 }
-
 .services .serve a h2{
   z-index: 2;
   font-size: 20px;
@@ -330,7 +328,6 @@ h1{
 .services-two .serve-two a:hover{
   color: #ff1e00;
 }
-
 .services-two .serve-two .auther{
   display: flex;
   justify-content: space-between;
@@ -343,7 +340,6 @@ h1{
   margin: 5px;
   border-radius: 50%;
 }
-
 .services-two .serve-two .auther i:first-of-type{
  color: gold;
  margin: 5px;
@@ -388,8 +384,5 @@ h1{
   color: gold;
   font-weight: bold;
  }
-
-
-
 /* second service section */
 /* end main section */
