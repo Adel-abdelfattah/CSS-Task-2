@@ -13,7 +13,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-
+hr{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
 @media screen and (max-width: 600px) {
   nav .i55555 {
     display: none;
@@ -69,6 +73,12 @@ body {
       }
       .services .serve a::before{
         height: 210px !important;
+      }
+      .info .kh-info{
+        width: 40% !important;
+      }
+      .per-info a, .per-info h5{
+        width: fit-content !important;
       }
 }
 @media screen and (min-width: 992px) {
@@ -242,6 +252,7 @@ h1{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .services .serve{
   width: 50%;
@@ -284,10 +295,16 @@ h1{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .services-two .serve-two{
   background-color: white;
   margin: 10px 0;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .services-two .work-service{
   display: flex;
@@ -299,6 +316,10 @@ h1{
 .services-two .work-service a{
   color: #000;
   font-size: 25px;
+  margin: 0 28px;
+}
+.serve-two>img:first-child{
+  width: 100%
 }
 .services-two .work-service a:first-of-type:hover{
   color: green;
@@ -316,14 +337,15 @@ h1{
 .services-two .serve-two a{
   margin: 10px;
   color: #777;
-  
+  font-weight: bold;
 }
-.services-two .serve-two a:first-of-type{
+.services-two .serve-two>a{
   display: block;
   color: #000;
   margin-bottom: 35px;
   font-size: 20px;
-  max-width: 350px;
+  max-width: 300px;
+  font-weight: normal;
 }
 .services-two .serve-two a:hover{
   color: #ff1e00;
@@ -333,6 +355,7 @@ h1{
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid gray;
+  
 
 }
 .services-two .serve-two .auther img{
@@ -385,4 +408,118 @@ h1{
   font-weight: bold;
  }
 /* second service section */
+
+
+/* info */
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: white;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.info .kh-info{
+  width: 100%;
+  margin: 15px 30px;
+}
+.info .kh-info h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.info .kh-info h2 a{
+  color: #000;
+}
+.info .kh-info h2 a:hover{
+  color: #ff1e00;
+}
+.info .kh-info li{
+ padding: 10px 0px;
+ list-style:square;
+ margin-right: 25px;
+}
+.info .kh-info li a{
+  color: #000;
+  font-weight: bold;
+}
+.info .kh-info li a:hover{
+  color: #ff1e00;
+}
+.info .kh-info img{
+  width: 200px;
+  margin: 10px 25px;
+}
+.info .kh-info:last-of-type a:first-of-type i{
+  color: blue;
+  font-size: 40px;
+  margin: 5px 15px;
+}
+.info .kh-info:last-of-type a:last-of-type i{
+  color: skyblue;
+  font-size: 40px;
+  margin: 5px 15px;
+}
+
+/* info */
+
+/* personal info and conditions */
+.per-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.per-info a, .per-info h5{
+  color: #000;
+  padding: 25px;
+  width: 100%;
+  border-bottom: 1px solid #e2dfdf;
+}
+.per-info a:hover{
+  background-color: rgb(214, 198, 168);
+}
+/* personal info and conditions */
 /* end main section */
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+}
+footer .footer-item{
+  width: 80px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-item:first-of-type{
+  width: 100%;
+  margin: 65px auto;
+}
+footer .footer-item:first-of-type img{
+width: 150px;
+}
+
+footer .footer-item a{
+  margin: 0 0 5px 0;
+}
+footer .footer-item a:last-of-type {
+  color: #000;
+  font-size: 12px;
+  padding: 0 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/* footer */
