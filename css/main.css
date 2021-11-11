@@ -18,6 +18,10 @@ hr{
   text-align: center;
   margin: 0 auto;
 }
+.active{
+  right: 0px !important;
+  
+}
 @media screen and (max-width: 600px) {
   nav .i55555 {
     display: none;
@@ -29,7 +33,6 @@ hr{
   .right ul {
     display: none;
   }
-  
 }
 @media (min-width: 600px) and (max-width: 768px) {
     nav .i55555 {
@@ -103,18 +106,22 @@ hr{
 
 aside {
   position: fixed;
-  right: 0;
+  right: -350px;
   top: 0;
   bottom: 0;
   width: 300px;
-  border-right: 1px solid;
+  /* border: 1px solid; */
   background-color: white;
+  z-index: 3;
+  transition: all 1s;
+  box-shadow: -2px 0px 10px 2px grey;
 }
 aside input {
   font-size: 18px;
   height: 41px;
-  width: 100%;
-  padding-right: 5px;
+  width: 99%;
+  padding:5px;
+  margin-left: 3px;
 }
 aside ul {
   display: flex;
@@ -168,11 +175,10 @@ aside ul li:last-of-type li a {
 /* main */
 main {
   position: relative;
-  right: 300px;
   box-shadow: 5px 0 3px gray;
   width: 100%;
-  height: 10000px;
   background-color: #f1f1f1;
+  transition: all 1s;
 }
 /* main */
 
