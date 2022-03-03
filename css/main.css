@@ -4,24 +4,22 @@
   box-sizing: border-box;
   direction: rtl;
   list-style: none;
+  text-decoration: none !important;
+  text-align: start;
+}
+a:hover{
   text-decoration: none;
 }
 body {
   background-color: #f1f1f1;
 }
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
+
 hr{
   width: 90%;
   text-align: center;
   margin: 0 auto;
 }
-.active{
-  right: 0px !important;
-  
-}
+
 @media screen and (max-width: 600px) {
   nav .i55555 {
     display: none;
@@ -220,12 +218,14 @@ header ul {
   align-items: center;
 }
 nav ul li a {
-  padding: 20px 15px;
+  padding: 20px 10px;
   list-style: none;
   color: white;
 }
 nav ul li a:hover {
   background-color: gray;
+  color: white;
+  text-decoration: none;
 }
 nav ul li i {
   font: normal normal normal 14px/1 FontAwesome;
@@ -263,6 +263,7 @@ h1{
 .services .serve{
   width: 50%;
   padding: 15px;
+  overflow: hidden;
 }
 .services .serve a{
   position: relative;
@@ -271,6 +272,7 @@ h1{
   justify-content: center;
   align-items: center;
   color: white;
+  overflow: hidden;
 }
 .services .serve a::before{
   content: "";
@@ -293,6 +295,11 @@ h1{
   top: 0;
   height: 150px;
   width: 100%;
+  transition: all .4s linear;
+}
+
+.services .serve a:hover img{
+  transform: scale(1.1,1.1);
 }
 /* first service section */
 
@@ -527,5 +534,93 @@ footer .footer-item a:last-of-type {
   text-align: center;
 }
 
+input{
+  border-radius: 5px;
+  box-shadow: 0 0 0.1px 1px #45b654;
+  background-color: #f5f6f7;
+  border: none;
+  padding: 10px 5px;
+}
 
+form h3{
+  text-align: center;
+  margin: 10px auto;
+  font-size: 25px;
+  min-width: 400px;
+}
+.formitem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+}
+.fullname input{
+  width: 47%;
+  margin: 10px ;
+  font-size: large;
+  align-self: flex-start;
+}
+
+.email input, .password input,.remember {
+  width: 100%;
+  margin: 10px;
+  font-size: large;
+}
+.submit a{
+  font-size: large;
+  padding: 5px 10px;
+  background-color: #00a400;
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.dateofbirth, .gender{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.dateofbirth label{
+  width: 100%;
+  margin: 5px 10px;
+}
+.dateofbirth select{
+  width: 25%;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #f5f6f7;
+  box-shadow: 0 0 0.1px 1px #45b654;
+  border: none;
+}
+.gender label:first-of-type{
+  width: 100%;
+  margin: 5px 10px;
+}
+.gender input, .remember input{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #f5f6f7;
+  box-shadow: none;
+  border: none;
+}
+.submit a:hover{
+  background-color: white;
+  color: rgb(31, 28, 31);
+  border: 1px solid;
+}
+form{
+  margin: 25px 30px;
+}
+
+fieldset{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 2px #313331;
+  border: none;
+}
 /* footer */

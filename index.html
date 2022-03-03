@@ -6,33 +6,559 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5amsat</title>
     <link rel="icon" href="images/5.png">
-    <link rel="stylesheet" href="css/form.css">
-    <script src="https://kit.fontawesome.com/c7e5a70f91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="F-awesome/all.min.css">
+    <link rel="stylesheet" href="F-awesome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <div class="container">
-        <main>
-            <form action="home.html" autocomplete="off">
-                <fieldset>
-                    <h3>Sign In</h3>
-                    <hr>
-                    <div class="email formitem" >
-                        <input type="email" name="email" placeholder="adelabdelfattah88@gmail.com">
+<body id="bdy">
+    <!-- aside -->
+    <aside id="aside-menu">
+
+        
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <input type="search" name="search" id="search" placeholder="إبحث عن ....">
+            <ul class="px-0">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-plus"></i>
+                        <SPan>أضف خدمة</SPan>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-folder-open"></i>
+                        <span>المشتريات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-truck"></i>
+                        <span>الطلبات الواردة</span> 
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-caret-down"></i>
+                    <a href="#adel">
+                        <i class="fas fa-comments"></i>
+                        <span>مجتمع خمسات </span> 
+                    </a>
+                    <ul id="adel">
+                        <li>
+                            <a href="#">
+                                نماذج أعمال قمت بتنفيذها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                طلبات الخدمات غير الموجودة
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                تجارب وقصص المستخدمين
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                أمور عامة حول خمسات
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+</div>
+        
+    </aside>
+    <!-- aside -->
+    <main id="adell">
+        <!-- header -->
+        <div class="expand">
+            <div class="container">
+                <header class="header">
+                    <nav class="align-items-center">
+                        <div class="right">
+                            <a id="aside-button" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars fi"></i></a>
+                            <img class="i55555" src="images/55555.png" alt="55555">
+                            <img class="i5" src="images/5.png" alt="5">
+                        <ul class="rul">
+                            <li><a href="#">
+                                    <i class="fas fa-plus"></i>
+                                    <SPan>أضف خدمة</SPan>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fas fa-boxes"></i>
+                                    <span>التصنيفات</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fas fa-folder-open"></i>
+                                    <span>المشتريات</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fas fa-truck"></i>
+                                    <span>الطلبات الواردة</span> 
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="left">
+                            <ul class="mb-0">
+                                <li><a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span>دخول</span>
+                                    </a>
+                                </li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#register">
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>مستخدم  جديد</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="fas fa-bell"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                    <i class="fas fa-user-circle fa-green"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <!-- header -->
+
+
+        <!-- main section -->
+        <div class="container" id="add">
+            <!-- services -->
+            <h1>كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</h1>
+            <div class="services">
+                <div class="serve ">
+                    <a href="#">
+                        <img src="images/service/1.jpg" alt="service">
+                        <h2>أعمال</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/2.jpg" alt="service">
+                        <h2>برمجة وتطوير</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/3.jpg" alt="service">
+                        <h2>تسويق إلكترونى</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/4.jpg" alt="service">
+                        <h2>تدريب عن بعد</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/5.jpg" alt="service">
+                        <h2>تصميم فيديو</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/6.jpg" alt="service">
+                        <h2>تصميم</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/7.jpg" alt="service">
+                        <h2>صوتيات</h2>
+                    </a>
+                </div>
+                <div class="serve">
+                    <a href="#">
+                        <img src="images/service/8.jpg" alt="service">
+                        <h2>كتابة وترجمة</h2>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <!-- services -->
+            <!-- work services -->
+            <div class="services-two">
+                <div class="work-service">
+                    <a href="#">خدمات أعمال</a>
+                    <a href="#">عرض الجميع</a>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/12.jpg" alt="11" srcset="">
+                    <a href="#">قاعدة بيانات تحتوي علي 5000 شركة في الأمارات</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                        <a href="#">استشارات أعمال</a>
                     </div>
-                    <div class="password formitem">
-                        <input type="password" name="password" placeholder="password">
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد المشترين</span></i>
+                            <span>44</span>
+                        </div>
+                        <img src="images/service/auth.png" alt="auther">
                     </div>
-                    <div class="remember">
-                        <input type="checkbox" name="gender" value="male">
-                        <label>Remember Me</label>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/11.jpg" alt="11" srcset="">
+                    <a href="#"> دراسة جدوي شاملة بشكل مميز او مكيف عادى</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                    <a href="#">استشارات أعمال</a>
                     </div>
-                    <div class="submit formitem">
-                        <a href="home.html">Log In</a>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth.png" alt="auther">
                     </div>
-                </fieldset>
-            </form>
-        </main>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/13.jpg" alt="11" srcset="">
+                    <a href="#">دراسة جدوى احترافية</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                    <a href="#">استشارات أعمال</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth.png" alt="auther">
+                    </div>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/14.jpg" alt="14" srcset="">
+                    <a href="#">استشارات قانونية وصياغة عقود فى مصر والسعودية مقابل 5 دولار</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                        <a href="#">استشارات أعمال</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth.png" alt="auther">
+                    </div>
+                </div>
+            </div>
+            <!-- work services -->
+            <hr>
+            <!-- design services -->
+            <div class="services-two">
+                <div class="work-service">
+                    <a href="#">خدمات برمجة وتطوير</a>
+                    <a href="#">عرض الجميع</a>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/15.png" alt="11" srcset="">
+                    <a href="#">عمل صفحتين من ويب من asp.net mvc/core مع قاعدة</a>
+                    <div class="links">
+                        <a href="#">برمجة وتطوير</a> /
+                        <a href="#">برمجة Java و .NET</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد المشترين</span></i>
+                            <span>44</span>
+                        </div>
+                        <img src="images/service/auth1.png" alt="auther">
+                    </div>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/16.jpg" alt="11" srcset="">
+                    <a href="#">تطوير و إنشاء متجر شوبيفاي ( shopify )</a>
+                    <div class="links">
+                        <a href="#">برمجة وتطوير</a> /
+                        <a href="#">تطوير متاجر إلكترونية</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth3.png" alt="auther">
+                    </div>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/13.jpg" alt="11" srcset="">
+                    <a href="#">دراسة جدوى احترافية</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                    <a href="#">استشارات أعمال</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth4.png" alt="auther">
+                    </div>
+                </div>
+                <div class="serve-two">
+                    <img src="images/service/14.jpg" alt="14" srcset="">
+                    <a href="#">استشارات قانونية وصياغة عقود فى مصر والسعودية مقابل 5 دولار</a>
+                    <div class="links">
+                        <a href="#">أعمال</a> /
+                        <a href="#">استشارات أعمال</a>
+                    </div>
+                    <div class="auther">
+                        <div class="review">
+                            <i class="fas fa-star"><span class="tooltiptext">التقييم</span></i>
+                            <span>5.0</span>
+                            <i class="fas fa-shopping-cart"><span class="tooltiptext">عدد القالشين</span></i>
+                            <span>صفر</span>
+                        </div>
+                        <img src="images/service/auth2.png" alt="auther">
+                    </div>
+                </div>
+            </div>
+            <!-- design services -->
+            <!-- informations -->
+            <div class="info">
+                <div class="kh-info">
+                    <h2><a href="#">موقع خمسات</a></h2>
+                    <ul>
+                        <li><a href="#">حول خمسات</a></li>
+                        <li><a href="#">كيف يعمل الموقع</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">إعرف كيف نضمن حقوقك</a></li>
+                    </ul>
+                </div>
+                <div class="kh-info">
+                    <h2><a href="#">احصل على مساعدة</a></h2>
+                    <ul>
+                        <li><a href="#">مركز المساعدة</a></li>
+                        <li><a href="#">تحدث معنا</a></li>
+                    </ul>
+                </div>
+                <div class="kh-info">
+                    <h2><a href="#">مدونة خمسات</a></h2>
+                    <ul>
+                        <li><a href="#">دليلك إلى تلخيص الكتب باحتراف</a></li>
+                        <li><a href="#">تعرف على كيفية تصميم الخريطة الذهنية</a></li>
+                        <li><a href="#">قواعد كتابة الشروط والأحكام في المواقع</a></li>
+                        <li><a href="#">كيف تختار الميكروفون المناسب للتعليق الصوتي؟</a></li>
+                    </ul>
+                </div>
+                <div class="kh-info">
+                    <h2><a href="#">وسائل الدفع</a></h2>
+                    <img src="images/service/PAY1.png" alt="" srcset="">
+                </div>
+                <div class="kh-info">
+                    <h2><a href="#">مجتمع خمسات</a></h2>
+                    <ul>
+                        <li><a href="#">نماذج أعمال قمت بتنفيذها</a></li>
+                        <li><a href="#">طلبات الخدمات غير الموجودة</a></li>
+                        <li><a href="#">تجارب وقصص المستخدمين</a></li>
+                        <li><a href="#">أمور عامة حول خمسات</a></li>
+                    </ul>
+                </div>
+                <div class="kh-info">
+                    <h2>تابع خمسات</h2>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- informations -->
+            <!-- personal info and conditions -->
+            <div class="per-info">
+                <a href="#">شروط الاستخدام</a>
+                <a href="#">بيان الخصوصية</a>
+                <a href="#">المستويات</a>
+                <a href="#">التسويق بالعمولة</a>
+                <h5>© 2021 Hsoub. All rights reserved.</h5>
+            </div>
+            <!-- personal info and conditions -->
+            <footer>
+                <div class="footer-item">
+                    <img src="images/footer/logo.svg" alt="" srcset="">
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/1.PNG" alt="" srcset=""></a>
+                    <a href="#">أنا</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/2.PNG" alt="" srcset=""></a>
+                    <a href="#">مستقل</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/3.PNG" alt="" srcset=""></a>
+                    <a href="#">خمسات</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/4.PNG" alt="" srcset=""></a>
+                    <a href="#">بعيد</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/5.PNG" alt="" srcset=""></a>
+                    <a href="#">أكاديمية حسوب</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/6.PNG" alt="" srcset=""></a>
+                    <a href="#">موسوعة حسوب</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/7.PNG" alt="" srcset=""></a>
+                    <a href="#">حسوب I/O</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/8.PNG" alt="" srcset=""></a>
+                    <a href="#">إعلانات حسوب</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#"><img src="images/footer/9.PNG" alt="" srcset=""></a>
+                    <a href="#">صور</a>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- login Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content shadow border-0">
+                <div class="modal-header bg-danger">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">تسجيل دخول</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">إيميل</label>
+                            <input type="email" class="form-control" id="login-email"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">باسورد</label>
+                            <input type="password" class="form-control" id="login-password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input mx-5" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">تذكرنى</label>
+                        </div>
+                        <button  id="sign-in" type="submit" class="btn btn-danger">الدخول</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- login Modal -->
+
+    <!-- register Modal -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content shadow border-0">
+                <div class="modal-header bg-danger">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">مستخدم جديد</h5>
+                </div>
+                <div class="modal-body">
+                    <form style="direction: rtl;">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">الايميل</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">الباسورد</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">العنوان الاول</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">العنوان الثانى</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">المدينة</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">الدولة</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>اختر الدولة...</option>
+                                    <option>مصر</option>
+                                    <option>فلسطين</option>
+                                    <option>السعودية</option>
+                                    <option>الامارات</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">الرقم البريدى</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    اوافق على جميع الشروط
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#login" id="sign_up" class="btn btn-danger">التسجيل</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- register Modal -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-   
